@@ -5,10 +5,11 @@
     <parent>
         <groupId>cz.habarta.typescript-generator</groupId>
         <artifactId>typescript-generator</artifactId>
-        <version>2.23-SNAPSHOT</version>
+        <version>2.23</version>
     </parent>
 
     <artifactId>typescript-generator-maven-plugin</artifactId>
+  <version>2.24-SNAPSHOT</version>
     <packaging>maven-plugin</packaging>
     <name>typescript-generator-maven-plugin</name>
 
