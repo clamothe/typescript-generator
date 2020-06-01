@@ -1,4 +1,4 @@
-[![Maven Central](https://img.shields.io/maven-central/v/cz.habarta.typescript-generator/typescript-generator-core.svg)](https://repo1.maven.org/maven2/cz/habarta/typescript-generator/typescript-generator-core/)
+[![Maven Central](https://img.shields.io/maven-central/v/github.clamothe.typescript-generator/typescript-generator-core.svg)](https://repo1.maven.org/maven2/cz/habarta/typescript-generator/typescript-generator-core/)
 [![Appveyor](https://img.shields.io/appveyor/ci/vojtechhabarta/typescript-generator/master.svg)](https://ci.appveyor.com/project/vojtechhabarta/typescript-generator)
 [![Stars](https://img.shields.io/github/stars/vojtechhabarta/typescript-generator.svg?style=social)](https://github.com/vojtechhabarta/typescript-generator)
 
@@ -59,7 +59,7 @@ Maven
 In Maven build you can use `typescript-generator-maven-plugin` like this:
 ``` xml
 <plugin>
-    <groupId>cz.habarta.typescript-generator</groupId>
+    <groupId>github.clamothe.typescript-generator</groupId>
     <artifactId>typescript-generator-maven-plugin</artifactId>
     <version>x.y.z</version>
     <executions>
@@ -88,16 +88,16 @@ Detailed description how to configure typescript-generator-maven-plugin is on ge
 Gradle
 ------
 
-In Gradle build you can use `cz.habarta.typescript-generator` plugin like this:
+In Gradle build you can use `github.clamothe.typescript-generator` plugin like this:
 ```groovy
-apply plugin: 'cz.habarta.typescript-generator'
+apply plugin: 'github.clamothe.typescript-generator'
 buildscript {
     repositories {
         mavenCentral()
    	    jcenter()
     }
     dependencies {
-        classpath group: 'cz.habarta.typescript-generator', name: 'typescript-generator-gradle-plugin', version: 'x.y.z'
+        classpath group: 'github.clamothe.typescript-generator', name: 'typescript-generator-gradle-plugin', version: 'x.y.z'
     }
 }
 generateTypeScript {
@@ -111,7 +111,7 @@ generateTypeScript {
 }
 ```
 
-For the Kotlin Gradle DSL you can alternatively use the `cz.habarta.typescript-generator` plugin like this:
+For the Kotlin Gradle DSL you can alternatively use the `github.clamothe.typescript-generator` plugin like this:
 
 #### build.gradle.kts
 ```kotlin
@@ -119,7 +119,7 @@ import cz.habarta.typescript.generator.JsonLibrary
 import cz.habarta.typescript.generator.TypeScriptFileType
 
 plugins {
-    id("cz.habarta.typescript-generator") version "x.y.z"
+    id("github.clamothe.typescript-generator") version "x.y.z"
 }
 
 tasks {
@@ -142,8 +142,8 @@ pluginManagement {
     }
     resolutionStrategy {
         eachPlugin {
-            if (requested.id.id == "cz.habarta.typescript-generator") {
-                useModule("cz.habarta.typescript-generator:typescript-generator-gradle-plugin:${requested.version ?: "+"}")
+            if (requested.id.id == "github.clamothe.typescript-generator") {
+                useModule("github.clamothe.typescript-generator:typescript-generator-gradle-plugin:${requested.version ?: "+"}")
             }
         }
     }
@@ -193,7 +193,7 @@ REST frameworks
 Typescript-generator can generate not only TypeScript declarations for JSON Java classes but it can also generate client classes for REST services. Suppported REST frameworks are JAXR-RS and Spring. Client for JAX-RS service can be generated using `generateJaxrsApplicationClient` parameter, client for Spring service can be generated using `generateSpringApplicationClient`. Since Spring support is in separate module it is needed to add this module to typescript-generator dependencies. Here is example for Maven:
 ``` xml
 <plugin>
-    <groupId>cz.habarta.typescript-generator</groupId>
+    <groupId>github.clamothe.typescript-generator</groupId>
     <artifactId>typescript-generator-maven-plugin</artifactId>
     <version>${typescript-generator.version}</version>
     <configuration>
@@ -202,7 +202,7 @@ Typescript-generator can generate not only TypeScript declarations for JSON Java
     </configuration>
     <dependencies>
         <dependency>
-            <groupId>cz.habarta.typescript-generator</groupId>
+            <groupId>github.clamothe.typescript-generator</groupId>
             <artifactId>typescript-generator-spring</artifactId>
             <version>${typescript-generator.version}</version>
         </dependency>

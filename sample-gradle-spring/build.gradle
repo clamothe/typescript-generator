@@ -1,6 +1,6 @@
 
 apply plugin: 'java'
-apply plugin: 'cz.habarta.typescript-generator'
+apply plugin: 'github.clamothe.typescript-generator'
 
 version = '2.0'
 sourceCompatibility = 1.8
@@ -21,8 +21,8 @@ buildscript {
     }
 
     dependencies {
-        classpath 'cz.habarta.typescript-generator:typescript-generator-gradle-plugin:2.+'
-        classpath 'cz.habarta.typescript-generator:typescript-generator-spring:2.+'
+        classpath 'github.clamothe.typescript-generator:typescript-generator-gradle-plugin:2.+'
+        classpath 'github.clamothe.typescript-generator:typescript-generator-spring:2.+'
     }
 }
 

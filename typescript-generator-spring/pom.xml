@@ -5,7 +5,7 @@
     <parent>
         <groupId>github.clamothe.typescript-generator</groupId>
         <artifactId>typescript-generator</artifactId>
-        <version>2.23-SNAPSHOT</version>
+        <version>2.23.1</version>
     </parent>
 
     <artifactId>typescript-generator-spring</artifactId>
@@ -30,9 +30,9 @@
     <dependencies>
         <!--compile dependencies-->
         <dependency>
-            <groupId>cz.habarta.typescript-generator</groupId>
+            <groupId>github.clamothe.typescript-generator</groupId>
             <artifactId>typescript-generator-core</artifactId>
-            <version>2.23-SNAPSHOT</version>
+            <version>2.23.1</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -57,9 +57,9 @@
 
         <!--test dependencies-->
         <dependency>
-            <groupId>cz.habarta.typescript-generator</groupId>
+            <groupId>github.clamothe.typescript-generator</groupId>
             <artifactId>typescript-generator-core</artifactId>
-            <version>2.23-SNAPSHOT</version>
+            <version>2.23.1</version>
             <type>test-jar</type>
             <scope>test</scope>
         </dependency>

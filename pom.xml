@@ -5,10 +5,11 @@
     <groupId>github.clamothe.typescript-generator</groupId>
     <artifactId>typescript-generator</artifactId>
     <packaging>pom</packaging>
-    <version>2.23-SNAPSHOT</version>
+    <version>2.23.1</version>
     <name>typescript-generator</name>
     <description>Generates TypeScript declaration file from specified java classes.</description>
     <url>https://github.com/vojtechhabarta/typescript-generator</url>
+
 
     <modules>
         <module>typescript-generator-core</module>
@@ -59,8 +60,9 @@
 <!--            <url>http://vojtechhabarta.github.io/typescript-generator</url>-->
 <!--        </site>-->
         <repository>
-            <id>github</id>
-            <url>https://maven.pkg.github.com/clamothe/typescript-generator</url>
+            <id>bintray</id>
+            <name>clamothe-typescript-generator</name>
+            <url>https://api.bintray.com/maven/clamothe/typescript-generator/typescript-generator/;publish=1</url>
         </repository>
     </distributionManagement>
 
